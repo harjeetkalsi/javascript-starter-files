@@ -11,11 +11,14 @@ export default function createListOfFruits(fruits) {
   // Looping through the array of Fruits to create a li for each fruit in the array
   // By looping through an array of Fruits we can add as much or as little to our list
 
-  fruits.map((fruit) => {
+  let filtered_fruits = fruits.filter((fruit) => fruit.length < 5);
+
+  filtered_fruits.map((fruit) => {
     const listItem = document.createElement("li");
     listItem.textContent = fruit;
     list.appendChild(listItem);
   });
+
 
   title.appendChild(titleText);
   // Now the title and list will be displayed since we have appended it to an element in the DOM.

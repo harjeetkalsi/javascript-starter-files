@@ -7,12 +7,10 @@ const birmingham = {
 export default function displayPopulation() {
   // Make a new <p></p> for population. This is not attached to the DOM yet.
   const paragraph = document.createElement("p");
-
   // Make some text content to put into your <p></p>
   const content = document.createTextNode(
     "Population: " + birmingham.population
   );
-
   // Put the text content into the <p></p>.
   paragraph.appendChild(content);
 
